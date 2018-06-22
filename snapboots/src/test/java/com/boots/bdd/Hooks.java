@@ -17,10 +17,7 @@ public class Hooks {
     }
 
     @After
-    public void tearDown(Scenario scenario){
-        if(!scenario.isFailed()) {
-        driversFactory.embedScreenshot(scenario);
-        }
-        driversFactory.closeBrowser();
+    public void tearDown(){
+               driversFactory.closeBrowser();
     }
 }
