@@ -19,5 +19,6 @@ public class Hooks {
     @After
     public void tearDown(){
                driversFactory.closeBrowser();
+               driversFactory.quit();
     }
 }
