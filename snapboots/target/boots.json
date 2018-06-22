@@ -1,0 +1,190 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 13794601914,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Filter By Price",
+        "description": "",
+        "id": "filterbyprice;filter-by-price;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 139989916,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "when I am on the home page Boots",
+            "match": {
+              "location": "StepDefnsPrice.when_I_am_on_the_home_page_of_Boots()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3158543621,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I search for a specific product",
+            "match": {
+              "location": "StepDefnsPrice.i_search_for_a_product()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5653800740,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I select a filter called by \"less than £2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "less than £2",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDefnsPrice.i_select_a_filter_by(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 21811,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should see results filtered by price",
+            "match": {
+              "location": "StepDefnsPrice.i_should_see_results_filtered_by_price()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@kumarsoni"
+          }
+        ]
+      }
+    ],
+    "name": "FilterByPrice",
+    "description": "As an end user\r\nI want to filter the product by price\r\nSo that I can view filtered product",
+    "id": "filterbyprice",
+    "keyword": "Feature",
+    "uri": "filterByPrice.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8251109010,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Filter By Price",
+        "description": "",
+        "id": "filterbystarrating;filter-by-price;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 106057,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "when I am on the home page of Boots",
+            "match": {
+              "location": "StepDefsRating.when_I_am_on_the_home_page_of_Boots()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4506191339,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I search for a product",
+            "match": {
+              "location": "StepDefsRating.i_search_for_a_product()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2797842236,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I select a filter by \"5 stars\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5 stars",
+                  "offset": 22
+                }
+              ],
+              "location": "StepDefsRating.i_select_a_filter_by(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26086,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should see results filtered star ratings",
+            "match": {
+              "location": "StepDefsRating.i_should_see_results_filtered_star_ratings()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@kumarsoni"
+          }
+        ]
+      }
+    ],
+    "name": "FilterByStarRating",
+    "description": "As an end user\r\nI want to filter the product by star ratings\r\nSo that I can view filtered product",
+    "id": "filterbystarrating",
+    "keyword": "Feature",
+    "uri": "filterByStarRating.feature"
+  }
+]
