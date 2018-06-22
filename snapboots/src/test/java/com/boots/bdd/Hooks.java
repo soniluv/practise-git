@@ -16,7 +16,7 @@ public class Hooks {
         driversFactory.implWait();
     }
 
-    //@After
+    @After
     public void tearDown(Scenario scenario){
         if(!scenario.isFailed()) {
         driversFactory.embedScreenshot(scenario);
